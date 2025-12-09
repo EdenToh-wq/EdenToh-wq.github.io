@@ -1,0 +1,183 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #cccccc;
+    font-family: "Elms Sans", sans-serif;
+    font-size: 100%; /* 16px (12pt) default font size | 1em is 100% default font size */
+    color: #000000;
+}
+
+h1{
+    padding-bottom: 10px;
+    font-size: 2.25em; /* 36px / 16px = 2.25em or 225% */
+    font-weight: normal;
+}
+
+h2{
+    padding-bottom: 10px;
+    font-size: 2.125em; /* 34px */
+    font-weight: normal;
+}
+
+h3{
+    padding-bottom: 10px;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+p{
+    line-height: 1.2;
+    padding-bottom: 8px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    /* background-color: salmon;   */
+    flex: 1 0 100%;
+    height: 200px;
+    background-image: url(../images/header-desktop.png);
+}
+
+nav{
+    background-color: bisque;
+    flex: 1 0 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a:link, #nav a:visited{
+    background-color: #ff7f50;
+    text-decoration: none;
+    color: #00fa9a;
+    /* width: 150px; */
+    display: block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover, #nav:active{
+    background-color: midnightblue;
+}
+
+main{
+    background-color: aliceblue;
+    flex: 1 1 70%; /* 800px - target / context = result */
+    padding: 5px 10px;
+}
+
+main h1{
+    color: slateblue;
+}
+
+aside{
+    background-color: azure;
+    flex: 1 1 30%; /* 400px - target / context (1200) = result */
+    padding: 5px 10px;
+}
+
+footer{
+    background-color: thistle;
+    flex: 1 0 100%;
+    padding: 10px;
+}
+
+/* media queries for tablet screens 800px or smaller */
+@media screen and (max-width: 800px){
+
+    body{
+        background-color: #333;
+    }
+
+    header{
+        
+        height: 100px;
+        background-image: url(../images/header-tablet.png);
+    }
+
+    nav a:link, nav a:visited{
+    
+        padding: 10px 20px;
+        margin-right: 20px;
+    
+}
+
+main{
+
+    flex: 1 1 60%; 
+}
+
+sidebar1{
+    flex: 1 1 40%; 
+
+}
+
+} 
+
+/* media queries for mobile screens 600px or smaller */
+@media screen and (max-width: 600px){
+
+    body{
+        background-color: yellow;
+    }
+
+    header{
+        
+        height: 50px;
+        background-image: url(../images/header-mobile.png);
+        
+    }
+
+    container{
+        flex-direction: column;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    nav a:link, #nav a:visited{
+
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    }
+
+main, #sidebar1{
+    padding: 20px;
+}
+
+
+footer{
+    text-align: center;
+
+}
+}
