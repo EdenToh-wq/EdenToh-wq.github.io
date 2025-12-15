@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Eden - Graphic Designer in Toronto</title>
-    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/inner.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,33 +13,48 @@
 <body>
   <div class="container">
 
-    <header>
-      <h1>Header</h1>
+    <header class="navbar">
+        <!-- Logo and link to home page -->
+        <a href="index.html" class="logo-link">
+            <img src="images/Eden_logo.svg" alt="Website Logo" width="120" class="logo">
+        </a>
+        
+        <nav class="navigation-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
     <main>
-      <h1>About</h1>
+      <div class="profile">
+        <div class="profiletext">
+        <h1>About Me</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit <a href="portfolio.html">click me.</a> Fusce non ullamcorper enim. Donec hendrerit fermentum ex et cursus. Aliquam quis suscipit dui. Praesent eu sem arcu. Quisque aliquet orci condimentum, consequat tortor non, feugiat velit. Praesent interdum mi sagittis ante varius, sed vestibulum elit blandit. Nulla turpis tortor, ornare ac lectus ac, luctus interdum ipsum. Morbi hendrerit lobortis ipsum ut laoreet.</p>
+        <p>My name is <strong>Eden Toh Wan Qian</strong>. I'm currently a graphic design student at George Brown College - School of Design in Toronto. Through my studies, I have developed a strong interest in visual communication, typography, and layout-driven design across both print and digital media.</p><br>
+        <p>My design journey began through hands-on projects that challenged me to think beyond aesthetics and focus on clarity, structure, and user experience. I enjoy pushing myself outside of my comfort zone by experimenting with new ideas and approaches, while continuously improving my technical and conceptual skills.</p><br>
+        <p>Outside of design, I enjoy illustration as a creative outlet, which allows me to explore visual expression in a more personal and experimental way. <a href="portfolio.html">Get to know more about me through social media.</a></p>
+            
+        </div>
 
-      <h1>Subheading</h1>
+        <img src="images/Aboutme_profile.svg" Alt="profile" width="500" id="profile">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non ullamcorper enim. Donec hendrerit fermentum ex et cursus. Aliquam quis suscipit dui. Praesent eu sem arcu. Quisque aliquet orci condimentum, consequat tortor non, feugiat velit. Praesent interdum mi sagittis ante varius, sed vestibulum elit blandit. Nulla turpis tortor, ornare ac lectus ac, luctus interdum ipsum. Morbi hendrerit lobortis ipsum ut laoreet.</p>
+      </div>
+
     </main>
 
-    <aside>
-      <h1>Sidebar1</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non ullamcorper enim. Donec hendrerit fermentum ex et cursus. Aliquam quis suscipit dui. Praesent eu sem arcu. Quisque aliquet orci condimentum, consequat tortor non, feugiat velit. Praesent interdum mi sagittis ante varius, sed vestibulum elit blandit. Nulla turpis tortor, ornare ac lectus ac, luctus interdum ipsum. Morbi hendrerit lobortis ipsum ut laoreet.</p>
-    </aside>
+    <hr>
+
+    <div class="reflection">
+      <h2>Thoughts on Design and Process</h2>
+
+      <p>To me, design functions as a visual language that allows people to understand information before any words are read. In many cases, our first impression of a subject is formed through visual experience, making design a crucial tool for communication.</p>
+      <p>In today's fast-paced society, design plays an important role in helping information be recognized and remembered quickly. Effective design must establish clarity and identity within a short amount of time, guiding the viewer's attention rather than overwhelming it.</p>
+      <p>For this reason, I believe design is not simply about appearing minimal or aesthetically pleasing, but about creating a strong and meaningful visual impression that communicates ideas clearly and effectively.</p>
+    </div>
 
     <footer>
       <p>&copy; Copyright 2025 - Eden Toh. All Rights Reserved.</p>

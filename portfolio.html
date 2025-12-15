@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Eden - Graphic Designer in Toronto</title>
-    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/filegrid.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,33 +13,67 @@
 <body>
   <div class="container">
 
-    <header>
-      <h1>Header</h1>
+    <header class="navbar">
+        <!-- Logo and link to home page -->
+        <a href="index.html" class="logo-link">
+            <img src="images/Eden_logo.svg" alt="Website Logo" width="120" class="logo">
+        </a>
+        
+        <nav class="navigation-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
 
     <main>
       <h1>Portfolio</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit <a href="portfolio.html">click me.</a> Fusce non ullamcorper enim. Donec hendrerit fermentum ex et cursus. Aliquam quis suscipit dui. Praesent eu sem arcu. Quisque aliquet orci condimentum, consequat tortor non, feugiat velit. Praesent interdum mi sagittis ante varius, sed vestibulum elit blandit. Nulla turpis tortor, ornare ac lectus ac, luctus interdum ipsum. Morbi hendrerit lobortis ipsum ut laoreet.</p>
+      <p>The following projects highlight my design process, from research and concept development to final outcomes across print and digital formats.</p>
 
-      <h1>Subheading</h1>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non ullamcorper enim. Donec hendrerit fermentum ex et cursus. Aliquam quis suscipit dui. Praesent eu sem arcu. Quisque aliquet orci condimentum, consequat tortor non, feugiat velit. Praesent interdum mi sagittis ante varius, sed vestibulum elit blandit. Nulla turpis tortor, ornare ac lectus ac, luctus interdum ipsum. Morbi hendrerit lobortis ipsum ut laoreet.</p>
+      <h3>My Recent Projects</h3>
     </main>
 
-    <aside>
-      <h1>Sidebar1</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non ullamcorper enim. Donec hendrerit fermentum ex et cursus. Aliquam quis suscipit dui. Praesent eu sem arcu. Quisque aliquet orci condimentum, consequat tortor non, feugiat velit. Praesent interdum mi sagittis ante varius, sed vestibulum elit blandit. Nulla turpis tortor, ornare ac lectus ac, luctus interdum ipsum. Morbi hendrerit lobortis ipsum ut laoreet.</p>
-    </aside>
+    <section class="portfolio-grid">
+      
+      <article class="Project">    
+        <div class="project-thumb">
+          <img src="images/brandrollout_poster.jpg" alt="Brand Rollout" id="poster">
+        </div>
+          <h4>Swish Bike Brand Poster</h4>
+          <p>Branding</p>
+      </article>
+      
+      <article class="Project">    
+        <div class="project-thumb">
+          <img src="images/Artboard 2_mathday.jpg" alt="Math Day Poster" id="poster">
+        </div>
+          <h4>National Math Day Creative Execution</h4>
+          <p>Branding</p>
+      </article>
+      
+      <article class="Project">    
+        <div class="project-thumb">
+          <img src="images/IMG_0342.jpg" alt="Gradient Mesh" id="Digitalapp">
+        </div>
+          <h4>Gradient Mesh Application</h4>
+          <p>Illustration</p>
+      </article>
+    </section>
+
+    <!-- <aside class="sidebar">
+      <h2>Project Type</h2>
+      <ul>
+        <li>Branding</li>
+        <li>Typography</li>
+        <li>Website</li>
+        <li>Drawing</li>
+        <li>Sketchbook</li>
+        </ul>
+    </aside> -->
 
     <footer>
       <p>&copy; Copyright 2025 - Eden Toh. All Rights Reserved.</p>
